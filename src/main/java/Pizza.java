@@ -5,10 +5,10 @@ import java.util.ArrayList;
  */
 public abstract class Pizza {
 
-	private String nom;
-	private String pate;
-	private String sauce;
-	private ArrayList<String> garnitures;
+	public String nom;
+	public String pate;
+	public String sauce;
+	public ArrayList<String> garnitures;
 
 	public void preparer() {
 		System.out.println("Préparation de Pizza sauce "+getNom());
