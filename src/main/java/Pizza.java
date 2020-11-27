@@ -1,26 +1,38 @@
+import java.util.ArrayList;
+
 /**
  * @author bruel (from O'Reilly Head-First series)
  */
 public abstract class Pizza {
 
+	private String nom;
+	private String pate;
+	private String sauce;
+	private ArrayList<String> garnitures;
+
 	public void preparer() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Préparation de Pizza sauce "+getNom());
+		System.out.println("Etalage de la pâte...");
+		System.out.println("Ajout de la sauce...");
+		System.out.println("Ajout des garnitures:");
+		System.out.println(this.garnitures);
 	}
 
 	public void cuire() {
-		// TODO Auto-generated method stub
+		System.out.println("Cuisson 25 minutes à 180 degrès");
 		
 	}
 
 	public void couper() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Découpage en parts triangulaires");		
 	}
 
 	public void emballer() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Emballage dans une boîte officielle");
+		System.out.println("");
 	}
-
+	
+	public String getNom(){
+		return this.nom;
+	}
 }
